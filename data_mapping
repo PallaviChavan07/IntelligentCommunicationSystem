@@ -1,0 +1,14 @@
+meal, food, health_assistance
+food, request, water
+water, request, juice
+juice, request, meal_back
+meal_back, meal, food
+health_assistance, medicines, mobility_assistance
+medicines, request, nursing_assistance
+nursing_assistance, request, health_assistance_back
+health_assistance_back, meal, medicines
+mobility_assistance, restroom_assistance, emergency_assistance
+restroom_assistance, request, travel_assistance
+travel_assistance, request, mobility_assistance_back
+mobility_assistance_back, meal, restroom_assistance
+emergency_assistance, request, meal
